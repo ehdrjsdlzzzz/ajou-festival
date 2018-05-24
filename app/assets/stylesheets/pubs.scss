@@ -372,3 +372,8 @@ display: block;
 .card-thumbnail img{
   width: 100%;
 }
+
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}

@@ -263,8 +263,12 @@
           <%=x.pub_detail%>
           <div><br></div>
             <img src="<%= x.image_url %>" style="width: 100%"  alt="pubsimage">
-            <img src="<%= x.pubprice %>" style="width: 100%"  alt="pubsimage">
-            <img src="<%= x.pubpost %>" style="width: 100%"  alt="pubsimage">
+            <% if x.price_url != nil %>
+		<img src="<%=x.price_url%>"style="width:100%" alt="pubsimage" >
+            <% end %>
+	    <% if x.location_url %>
+	   	<img src="<%= x.location_url%>" style="width:100%" alt="pubsimage">
+            <% end %>
         </div>
       </div>
     </div>
